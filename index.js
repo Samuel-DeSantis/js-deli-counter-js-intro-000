@@ -4,7 +4,7 @@ function takeANumber(queue, new_person) {
 }
 function nowServing(queue) {
   if(queue.length === 0) {return "There is nobody waiting to be served!";}
-  else {return `Currently serving ${queue[1]}.`;}
+  else {return `Currently serving ${queue[0]}.`;}
   queue.shift();
 }
 function currentLine(queue) {}
