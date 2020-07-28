@@ -15,8 +15,9 @@ function currentLine(queue) {
   if(queue.length === 0) {return "The line is currently empty.";}
   else {
     let line = "The line is currently: ";
+    let count = 1;
     for(let i = 0; i < len; i++) {
-      line += `${i}. ${queue[i]} `
+      line += `${count++}. ${queue[i]} `
     }
     console.log(line);
   }
