@@ -20,5 +20,6 @@ function currentLine(queue) {
       if(i === --len) {line += `${count++}. ${queue[i]}`;}
       else {line += `${count++}. ${queue[i]}, `;}
     }
+    return line;
   }
 }
