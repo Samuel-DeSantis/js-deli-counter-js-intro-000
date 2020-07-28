@@ -8,6 +8,5 @@ function nowServing(queue) {
     queue.shift();
     return `Currently serving ${queue[0]}.`;
   }
-
 }
 function currentLine(queue) {}
