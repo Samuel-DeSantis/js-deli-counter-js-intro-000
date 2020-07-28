@@ -20,7 +20,5 @@ function currentLine(queue) {
       if(i === --len) {line += `${count++}. ${queue[i]}`;}
       else {line += `${count++}. ${queue[i]}, `;}
     }
-    line.slice(0,--line.length);
-    console.log(line);
   }
 }
