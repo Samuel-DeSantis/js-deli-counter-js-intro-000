@@ -11,13 +11,14 @@ function nowServing(queue) {
   }
 }
 function currentLine(queue) {
-  let len = queue.length;
+  var len = queue.length;
+  var line = "The line is currently: ";
   if(queue.length === 0) {return "The line is currently empty.";}
   else {
-    var line = "The line is currently: ";
     let count = 1;
     for(let i = 0; i < len; i++) {
-      line += `${count++}. ${queue[i]}, `
+      if(i === --len) {line += `${count++}. ${queue[i]}`;}
+      else {line += `${count++}. ${queue[i]}, `;}
     }
     line.slice(0,--line.length);
     console.log(line);
