@@ -11,9 +11,7 @@ function nowServing(queue) {
   }
 }
 function currentLine(queue) {
-  console.log(queue);
   var len = queue.length;
-  console.log(len);
   var line = "The line is currently: ";
   if(queue.length === 0) {return "The line is currently empty.";}
   else {
@@ -21,9 +19,7 @@ function currentLine(queue) {
     for(let i = 0; i < len; i++) {
       if(count === len) {line += `${count++}. ${queue[i]}`;}
       else {line += `${count++}. ${queue[i]}, `;}
-      console.log(line)
     }
-    console.log(line);
     return line;
   }
 }
