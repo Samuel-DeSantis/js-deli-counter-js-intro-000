@@ -16,7 +16,7 @@ function currentLine(queue) {
   else {
     let line = "The line is currently: ";
     for(let i = 0; i < len; i++) {
-      line += `${i}. ${queue[i]}`
+      line += `${++i}. ${queue[i]} `
     }
     console.log(line);
   }
