@@ -12,7 +12,7 @@ function nowServing(queue) {
 }
 function currentLine(queue) {
   console.log(queue);
-  var len = queue.length;
+  var len = ++queue.length;
   var line = "The line is currently: ";
   if(queue.length === 0) {return "The line is currently empty.";}
   else {
