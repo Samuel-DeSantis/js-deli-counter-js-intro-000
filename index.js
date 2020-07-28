@@ -17,8 +17,9 @@ function currentLine(queue) {
     let line = "The line is currently: ";
     let count = 1;
     for(let i = 0; i < len; i++) {
-      line += `${count++}. ${queue[i]} `
+      line += `${count++}. ${queue[i]}, `
     }
+    line.slice(0,--line.length);
     console.log(line);
   }
 }
