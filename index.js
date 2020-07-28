@@ -10,4 +10,14 @@ function nowServing(queue) {
     return current_cust;
   }
 }
-function currentLine(queue) {}
+function currentLine(queue) {
+  let len = queue.length;
+  if(queue.length === 0) {return "The line is currently empty.";}
+  else {
+    let line = "The line is currently: ";
+    for(let i = 0; i < len; i++) {
+      line += `${i}. ${queue[i]}`
+    }
+    line.pop();
+  }
+}
