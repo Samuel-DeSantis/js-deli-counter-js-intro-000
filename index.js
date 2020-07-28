@@ -18,6 +18,6 @@ function currentLine(queue) {
     for(let i = 0; i < len; i++) {
       line += `${i}. ${queue[i]}`
     }
-    line.pop();
+    console.log(line);
   }
 }
